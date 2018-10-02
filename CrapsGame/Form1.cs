@@ -113,8 +113,7 @@ namespace CrapsGame
             }
             else
             {
-                // Generate random number on each roll from REST API
-                GenerateRandom();
+                
 
                 // If the player hasn't won, and they're trying to roll the set point
                 if (pointSet)
@@ -143,6 +142,9 @@ namespace CrapsGame
             // Loop through the array of dice and set each index to a random number from API
             for (int i = 0; i < diceNumber.Length; i++)
             {
+                // Generate random number on each roll from REST API
+                GenerateRandom();
+
                 diceNumber[i] = randomValue;
             }
             // Set diceSum to the sum of both dice. Just to clean up code a bit
